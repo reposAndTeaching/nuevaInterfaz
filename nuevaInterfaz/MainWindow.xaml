@@ -1,0 +1,19 @@
+﻿<Window x:Class="nuevaInterfaz.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:nuevaInterfaz"
+        mc:Ignorable="d"
+        Title="Registro" Height="320" Width="480">
+    <Grid>
+        <Label x:Name="labelNombre" Content="Nombre: " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26" Width="60"/>
+        <Button x:Name="buttonRegistrar" Content="Registrar!" HorizontalAlignment="Left" Margin="75,150,0,0" VerticalAlignment="Top" Width="75" Click="buttonRegistrar_Click" IsEnabled="False"/>
+        <TextBox x:Name="textBoxNombre" HorizontalAlignment="Left" Height="22" Margin="75,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" Cursor="" TextChanged="textBoxAll_TextChanged"/>
+        <Label x:Name="labelRut" Content="Rut: " HorizontalAlignment="Left" Margin="10,53,0,0" VerticalAlignment="Top" Width="60"/>
+        <Label x:Name="labelEdad" Content="Edad: " HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top" Width="60"/>
+        <TextBox x:Name="textBoxRut" HorizontalAlignment="Left" Height="22" Margin="75,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" Cursor="" TextChanged="textBoxAll_TextChanged"/>
+        <TextBox x:Name="textBoxEdad" HorizontalAlignment="Left" Height="22" Margin="75,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129" Cursor="" PreviewTextInput="textBoxEdad_PreviewTextInput" TextChanged="textBoxAll_TextChanged"/>
+        <ListBox x:Name="listBoxPersonas" HorizontalAlignment="Left" Height="265" Margin="209,10,0,0" VerticalAlignment="Top" Width="214" />
+    </Grid>
+</Window>
